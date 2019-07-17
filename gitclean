@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+for BRANCH in `git branch -l | cut -c 3-`
+do
+    DROP=1
+    for KEEP in $@
+    do
+        if [[ "$BRANCH" = "$KEEP" ]]
+        then
+            DROP=0
+        fi
+    done
+    if [[ $DROP == 1 ]]
+    then
+        git branch -D "$BRANCH"
+    fi
+done
