@@ -21,6 +21,7 @@ open -a Docker
 brew cask install spotify
 
 brew cask install sequel-pro
+brew cask install psequel
 
 brew cask install google-backup-and-sync
 
@@ -40,6 +41,7 @@ hyper install hypercwd
 
 brew install python3
 brew install httpie
+brew install tree
 
 sudo cp ./gitclean /usr/local/bin
 sudo cp ./bashrc /etc/bashrc
