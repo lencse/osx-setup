@@ -42,6 +42,30 @@ hyper install hypercwd
 brew install python3
 brew install httpie
 brew install tree
+brew install zsh
+brew install zsh-completions
+
+brew tap caskroom/fonts
+
+brew cask install \
+  font-fira-code \
+  font-fira-mono \
+  font-fira-mono-for-powerline \
+  font-fira-sans
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+npm install -g spaceship-prompt
+
+cd /tmp
+git clone git@github.com:powerline/fonts.git
+fonts/install.sh
+
+echo 'Manual step: Add "Fira Code" to fonts in hyper config'
 
 sudo cp ./gitclean /usr/local/bin
 sudo cp ./bashrc /etc/bashrc
+
+cat ./.zshrc >> ~/.zshrc
+
+git config --global pager.branch false
