@@ -29,6 +29,8 @@ brew cask install double-commander
 brew cask install insomnia
 
 brew cask install skype
+brew cask install viber
+
 
 brew install nvm
 
