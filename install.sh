@@ -28,6 +28,7 @@ brew cask install google-backup-and-sync
 brew cask install double-commander
 brew cask install insomnia
 
+brew cask install skype
 
 brew install nvm
 
