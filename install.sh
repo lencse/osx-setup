@@ -26,7 +26,7 @@ brew cask install psequel
 brew cask install google-backup-and-sync
 
 brew cask install double-commander
-brew cask install insomnia
+brew cask install postman
 
 brew cask install skype
 brew cask install viber
